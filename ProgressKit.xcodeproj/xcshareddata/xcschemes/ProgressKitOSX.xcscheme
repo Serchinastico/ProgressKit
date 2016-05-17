@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "49CE19531CEBCDA2003B27FC"
-               BuildableName = "ProgressKit-OSX.framework"
-               BlueprintName = "ProgressKit-OSX"
+               BlueprintIdentifier = "49CE19651CEBCEDC003B27FC"
+               BuildableName = "ProgressKitOSX.framework"
+               BlueprintName = "ProgressKitOSX"
                ReferencedContainer = "container:ProgressKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49CE19531CEBCDA2003B27FC"
-            BuildableName = "ProgressKit-OSX.framework"
-            BlueprintName = "ProgressKit-OSX"
+            BlueprintIdentifier = "49CE19651CEBCEDC003B27FC"
+            BuildableName = "ProgressKitOSX.framework"
+            BlueprintName = "ProgressKitOSX"
             ReferencedContainer = "container:ProgressKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49CE19531CEBCDA2003B27FC"
-            BuildableName = "ProgressKit-OSX.framework"
-            BlueprintName = "ProgressKit-OSX"
+            BlueprintIdentifier = "49CE19651CEBCEDC003B27FC"
+            BuildableName = "ProgressKitOSX.framework"
+            BlueprintName = "ProgressKitOSX"
             ReferencedContainer = "container:ProgressKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
