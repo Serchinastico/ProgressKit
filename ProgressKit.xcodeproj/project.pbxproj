@@ -10,6 +10,16 @@
 		49CE19691CEBCEDC003B27FC /* ProgressKitOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CE19681CEBCEDC003B27FC /* ProgressKitOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49CE196D1CEBCEDC003B27FC /* ProgressKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CE19661CEBCEDC003B27FC /* ProgressKitOSX.framework */; };
 		49CE196E1CEBCEDC003B27FC /* ProgressKitOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49CE19661CEBCEDC003B27FC /* ProgressKitOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CE19721CEBD09C003B27FC /* IndeterminateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3918F8C1B4E8AB100558DAB /* IndeterminateAnimation.swift */; };
+		49CE19731CEBD09C003B27FC /* CircularSnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3918F821B4E88DE00558DAB /* CircularSnail.swift */; };
+		49CE19741CEBD09C003B27FC /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3918FA71B4ECF7100558DAB /* Rainbow.swift */; };
+		49CE19751CEBD09C003B27FC /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A468511B5434F7006DDE31 /* Crawler.swift */; };
+		49CE19761CEBD09C003B27FC /* ShootingStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3918F831B4E88DE00558DAB /* ShootingStars.swift */; };
+		49CE19771CEBD09C003B27FC /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D1C6B1B676889001DBAF2 /* Spinner.swift */; };
+		49CE19781CEBD09C003B27FC /* RotatingArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E340FDB71BDE45F000CE6550 /* RotatingArc.swift */; };
+		49CE19791CEBD0A1003B27FC /* DeterminateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3918F8E1B4E8C2900558DAB /* DeterminateAnimation.swift */; };
+		49CE197A1CEBD0A1003B27FC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3918F801B4E88CF00558DAB /* CircularProgressView.swift */; };
+		49CE197B1CEBD0A1003B27FC /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37568DE1B6AAB530073E26F /* ProgressBar.swift */; };
 		E31617A61BC0596C007AD70F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31617A51BC0596C007AD70F /* BaseView.swift */; };
 		E340FDB81BDE45F000CE6550 /* RotatingArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E340FDB71BDE45F000CE6550 /* RotatingArc.swift */; };
 		E35D1C6C1B676889001DBAF2 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D1C6B1B676889001DBAF2 /* Spinner.swift */; };
@@ -377,6 +387,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CE19751CEBD09C003B27FC /* Crawler.swift in Sources */,
+				49CE197A1CEBD0A1003B27FC /* CircularProgressView.swift in Sources */,
+				49CE19771CEBD09C003B27FC /* Spinner.swift in Sources */,
+				49CE19741CEBD09C003B27FC /* Rainbow.swift in Sources */,
+				49CE19781CEBD09C003B27FC /* RotatingArc.swift in Sources */,
+				49CE19731CEBD09C003B27FC /* CircularSnail.swift in Sources */,
+				49CE19721CEBD09C003B27FC /* IndeterminateAnimation.swift in Sources */,
+				49CE19761CEBD09C003B27FC /* ShootingStars.swift in Sources */,
+				49CE197B1CEBD0A1003B27FC /* ProgressBar.swift in Sources */,
+				49CE19791CEBD0A1003B27FC /* DeterminateAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ProgressKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaunteya.$(PRODUCT_NAME:rfc1034identifier)";
@@ -581,6 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ProgressKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaunteya.$(PRODUCT_NAME:rfc1034identifier)";
