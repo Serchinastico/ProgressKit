@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49CE194A1CEBCD3F003B27FC /* ProgressKitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CE19491CEBCD3F003B27FC /* ProgressKitFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49CE19571CEBCDA2003B27FC /* ProgressKit-OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CE19561CEBCDA2003B27FC /* ProgressKit-OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49CE195B1CEBCDA2003B27FC /* ProgressKit-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CE19541CEBCDA2003B27FC /* ProgressKit-OSX.framework */; };
+		49CE195C1CEBCDA2003B27FC /* ProgressKit-OSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49CE19541CEBCDA2003B27FC /* ProgressKit-OSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E31617A61BC0596C007AD70F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31617A51BC0596C007AD70F /* BaseView.swift */; };
 		E340FDB81BDE45F000CE6550 /* RotatingArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E340FDB71BDE45F000CE6550 /* RotatingArc.swift */; };
 		E35D1C6C1B676889001DBAF2 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D1C6B1B676889001DBAF2 /* Spinner.swift */; };
@@ -29,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		49CE19591CEBCDA2003B27FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3AD65CA1B426758009541CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49CE19531CEBCDA2003B27FC;
+			remoteInfo = "ProgressKit-OSX";
+		};
 		E3AD65E51B426758009541CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E3AD65CA1B426758009541CD /* Project object */;
@@ -38,10 +47,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		49CE19601CEBCDA2003B27FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49CE195C1CEBCDA2003B27FC /* ProgressKit-OSX.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		49CE19471CEBCD3E003B27FC /* ProgressKitFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressKitFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CE19491CEBCD3F003B27FC /* ProgressKitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressKitFramework.h; sourceTree = "<group>"; };
 		49CE194B1CEBCD3F003B27FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CE19541CEBCDA2003B27FC /* ProgressKit-OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "ProgressKit-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CE19561CEBCDA2003B27FC /* ProgressKit-OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressKit-OSX.h"; sourceTree = "<group>"; };
+		49CE19581CEBCDA2003B27FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E31617A51BC0596C007AD70F /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E340FDB71BDE45F000CE6550 /* RotatingArc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RotatingArc.swift; path = InDeterminate/RotatingArc.swift; sourceTree = "<group>"; };
 		E35D1C6B1B676889001DBAF2 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Spinner.swift; path = InDeterminate/Spinner.swift; sourceTree = "<group>"; };
@@ -67,7 +92,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49CE19431CEBCD3E003B27FC /* Frameworks */ = {
+		49CE19501CEBCDA2003B27FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CE195B1CEBCDA2003B27FC /* ProgressKit-OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +124,15 @@
 				49CE194B1CEBCD3F003B27FC /* Info.plist */,
 			);
 			path = ProgressKitFramework;
+			sourceTree = "<group>";
+		};
+		49CE19551CEBCDA2003B27FC /* ProgressKit-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				49CE19561CEBCDA2003B27FC /* ProgressKit-OSX.h */,
+				49CE19581CEBCDA2003B27FC /* Info.plist */,
+			);
+			path = "ProgressKit-OSX";
 			sourceTree = "<group>";
 		};
 		E316CCAA1B4E8633005A9A31 /* Indeterminate */ = {
@@ -133,6 +168,7 @@
 				E3AD65D41B426758009541CD /* ProgressKit */,
 				E3AD65E71B426758009541CD /* ProgressKitTests */,
 				49CE19481CEBCD3F003B27FC /* ProgressKitFramework */,
+				49CE19551CEBCDA2003B27FC /* ProgressKit-OSX */,
 				E3AD65D31B426758009541CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,7 +178,7 @@
 			children = (
 				E3AD65D21B426758009541CD /* ProgressKit.app */,
 				E3AD65E41B426758009541CD /* ProgressKitTests.xctest */,
-				49CE19471CEBCD3E003B27FC /* ProgressKitFramework.framework */,
+				49CE19541CEBCDA2003B27FC /* ProgressKit-OSX.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,33 +225,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		49CE19441CEBCD3E003B27FC /* Headers */ = {
+		49CE19511CEBCDA2003B27FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49CE194A1CEBCD3F003B27FC /* ProgressKitFramework.h in Headers */,
+				49CE19571CEBCDA2003B27FC /* ProgressKit-OSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		49CE19461CEBCD3E003B27FC /* ProgressKitFramework */ = {
+		49CE19531CEBCDA2003B27FC /* ProgressKit-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49CE194E1CEBCD3F003B27FC /* Build configuration list for PBXNativeTarget "ProgressKitFramework" */;
+			buildConfigurationList = 49CE195D1CEBCDA2003B27FC /* Build configuration list for PBXNativeTarget "ProgressKit-OSX" */;
 			buildPhases = (
-				49CE19421CEBCD3E003B27FC /* Sources */,
-				49CE19431CEBCD3E003B27FC /* Frameworks */,
-				49CE19441CEBCD3E003B27FC /* Headers */,
-				49CE19451CEBCD3E003B27FC /* Resources */,
+				49CE194F1CEBCDA2003B27FC /* Sources */,
+				49CE19501CEBCDA2003B27FC /* Frameworks */,
+				49CE19511CEBCDA2003B27FC /* Headers */,
+				49CE19521CEBCDA2003B27FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ProgressKitFramework;
-			productName = ProgressKitFramework;
-			productReference = 49CE19471CEBCD3E003B27FC /* ProgressKitFramework.framework */;
+			name = "ProgressKit-OSX";
+			productName = "ProgressKit-OSX";
+			productReference = 49CE19541CEBCDA2003B27FC /* ProgressKit-OSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E3AD65D11B426758009541CD /* ProgressKit */ = {
@@ -225,10 +261,12 @@
 				E3AD65CE1B426758009541CD /* Sources */,
 				E3AD65CF1B426758009541CD /* Frameworks */,
 				E3AD65D01B426758009541CD /* Resources */,
+				49CE19601CEBCDA2003B27FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				49CE195A1CEBCDA2003B27FC /* PBXTargetDependency */,
 			);
 			name = ProgressKit;
 			productName = ProgressKit;
@@ -264,7 +302,7 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kauntey Suryawanshi";
 				TargetAttributes = {
-					49CE19461CEBCD3E003B27FC = {
+					49CE19531CEBCDA2003B27FC = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					E3AD65D11B426758009541CD = {
@@ -291,13 +329,13 @@
 			targets = (
 				E3AD65D11B426758009541CD /* ProgressKit */,
 				E3AD65E31B426758009541CD /* ProgressKitTests */,
-				49CE19461CEBCD3E003B27FC /* ProgressKitFramework */,
+				49CE19531CEBCDA2003B27FC /* ProgressKit-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		49CE19451CEBCD3E003B27FC /* Resources */ = {
+		49CE19521CEBCDA2003B27FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,7 +361,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		49CE19421CEBCD3E003B27FC /* Sources */ = {
+		49CE194F1CEBCDA2003B27FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +401,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		49CE195A1CEBCDA2003B27FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49CE19531CEBCDA2003B27FC /* ProgressKit-OSX */;
+			targetProxy = 49CE19591CEBCDA2003B27FC /* PBXContainerItemProxy */;
+		};
 		E3AD65E61B426758009541CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E3AD65D11B426758009541CD /* ProgressKit */;
@@ -382,50 +425,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		49CE194C1CEBCD3F003B27FC /* Debug */ = {
+		49CE195E1CEBCDA2003B27FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ProgressKitFramework/Info.plist;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "ProgressKit-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.serchinastico.ProgressKitFramework;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serchinastico.ProgressKit-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		49CE194D1CEBCD3F003B27FC /* Release */ = {
+		49CE195F1CEBCDA2003B27FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ProgressKitFramework/Info.plist;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "ProgressKit-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.serchinastico.ProgressKitFramework;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serchinastico.ProgressKit-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -577,11 +617,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49CE194E1CEBCD3F003B27FC /* Build configuration list for PBXNativeTarget "ProgressKitFramework" */ = {
+		49CE195D1CEBCDA2003B27FC /* Build configuration list for PBXNativeTarget "ProgressKit-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49CE194C1CEBCD3F003B27FC /* Debug */,
-				49CE194D1CEBCD3F003B27FC /* Release */,
+				49CE195E1CEBCDA2003B27FC /* Debug */,
+				49CE195F1CEBCDA2003B27FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
